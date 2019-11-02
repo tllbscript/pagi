@@ -1,0 +1,3 @@
+//<![CDATA[ 
+function get_n(n){var o,t,e=decodeURIComponent(window.location.search.substring(1)).split("&");for(t=0;t<e.length;t++)if((o=e[t].split("="))[0]===n)return void 0===o[1]||o[1]}$(document).ready(function(){var n=get_n("n");$(".post-content").hide(),void 0===n?$(".content_1").show():$(".content_"+n).show();var o=$(".post-content").length;if(0!=o)for(i=1;i<=o;i++){var t=window.location.pathname;$("p.paging").append($('<a href="'+t+"?n="+i+'" class="tombol n'+i+'"> '+i+" </a>"))}else $("p.paging").hide();void 0==n&&$(".tombol.n1").toggleClass("blanter"),n==n&&$(".tombol.n"+n).toggleClass("blanter")});
+//]]>
